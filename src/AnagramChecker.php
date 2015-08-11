@@ -2,10 +2,12 @@
 class AnagramChecker
 {
 
-  function checkAnagram()
+  function checkAnagram($inputStringOne, $inputStringTwo)
   {
 
-    return "balls";
+
+      return "balls";
+
   }
 
 
