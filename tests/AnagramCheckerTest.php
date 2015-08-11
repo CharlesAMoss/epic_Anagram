@@ -58,7 +58,22 @@
         }//end test
 
 
-//
+// will return all postive matches input1: "rat" input2: "I make art about tar and my name is tra" output: ["rat", ["art","tar", "tra"]]
+
+        function test_AnagramChecker_postiveMatches()
+        {
+
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input1 = "rat";
+            $input2 = "I make art about tar and may name is tra";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input1, $input2);
+
+            //Assert
+            $this->assertEquals(["rat", ["art","tar", "tra"]], $result);
+        }//end test
 
     }
 

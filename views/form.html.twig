@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Convert to Title Case!</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>Anagram-A-Mama</h1>
+        <p>lets find an Anagram</p>
+        <form action='/results'>
+            <div class='form-group'>
+              <label for='word'>a word:</label>
+              <input id='word' name='word' class='form-control' type='text'></input>
+            </div>
+            <div class='form-group'>
+              <label for='blob'>a blob of text:</label>
+              <textarea id='blob' name='blob' class='form-control' rows="4" type='text'></textarea>
+            </div>
+
+
+            <button type='submit' class='btn-success'>Find</button>
+        </form>
+    </div>
+</body>
+</html>
