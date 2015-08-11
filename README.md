@@ -6,7 +6,7 @@
 
 ## Description
 
-_User inputs a single word and body of text, program returns any anagrams that may be found in the body of text.  **(exp. input: "deadbeef" and input: "feedbead more beef" return: "feedbead is an anagram of deadbeef")**_
+_User inputs a single word and body of text, program returns any anagrams that may be found in the body of text.  **(exp. input: "deadbeef" and input: "feedbead more beef" prints: "feedbead is an anagram of deadbeef")**_
 
 ## Setup
 
@@ -24,14 +24,14 @@ _This project makes use of PHP, the testing framework [PHPUnit](https://phpunit.
 
 ## To Do
 
- 
+
 
 
 ### Legal
 
 
 
-Copyright (c) 2015 Charles A Moss
+Copyright (c) 2015 Charles A Moss & Mike Chastain
 
 This software is licensed under the MIT license.
 

@@ -5,9 +5,9 @@
     class AnagramCheckerTest extends PHPUnit_Framework_TestCase
     {
 
-// input two strings and return one string input: "foo", "bar" output: "some string"
+// input two strings and return one string input: "foo", "bar" output: []
 
-        function test_AnagramChecker_StringCheck()
+        function test_AnagramChecker_returnCheck()
         {
 
             //Arrange
@@ -19,10 +19,10 @@
             $result = $test_AnagramChecker->checkAnagram($input1, $input2);
 
             //Assert
-            $this->assertTrue(is_string($result));
+            $this->assertTrue(is_array($result));
         }//end test
 
-// input two strings and return one string input which contains input1 within output: "foo", "bar is a paragraph of foo text oof" output: "some string which contains foo" result TRUE
+// does index 0 of the returned array match the first inputed string: "foo", "bar is a paragraph of foo text oof" output: ["foo", ... ]
 
         function test_AnagramChecker_containsInput1()
         {
@@ -36,11 +36,12 @@
             $result = $test_AnagramChecker->checkAnagram($input1, $input2);
 
             //Assert
-            $this->assertContains($input1,$result, $message = "I am broken");
+            $this->assertTrue($result[0] === $input1);
         }//end test
+
+
+//
 
     }
 
 ?>
-
-//strpos($result,$input1) !== false){return true;}

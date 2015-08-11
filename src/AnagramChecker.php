@@ -5,8 +5,14 @@ class AnagramChecker
   function checkAnagram($inputStringOne, $inputStringTwo)
   {
 
+            $anagram_array = array();
+            $match_array = array();
 
-      return $inputStringOne . " Is an anagram of  " . $inputStringTwo;
+            //array_push($anagram_array, $inputStringOne);
+            array_push($anagram_array, $match_array);
+
+
+      return $anagram_array;
 
   }
 
