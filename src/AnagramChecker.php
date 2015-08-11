@@ -6,7 +6,7 @@ class AnagramChecker
   {
 
 
-      return "balls";
+      return $inputStringOne . " Is an anagram of  " . $inputStringTwo;
 
   }
 
