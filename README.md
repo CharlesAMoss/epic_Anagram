@@ -24,7 +24,7 @@ _This project makes use of PHP, the testing framework [PHPUnit](https://phpunit.
 
 ## To Do
 
-
+_Clean up formating, make twig temp look better, bullet proof edge cases in form inputs_   
 
 
 ### Legal

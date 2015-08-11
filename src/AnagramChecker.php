@@ -25,10 +25,15 @@ class AnagramChecker
 
                 if (($this_possible_match == $imploded_one) && ($inputStringOne != $possible_match))
 
-                {array_push($match_array,$possible_match);
+                {
+                    array_push($match_array,$possible_match);
 
                 }
 
+            }
+            if (empty($match_array))
+            {
+                array_push($match_array,"No Matches");
             }
 
 
