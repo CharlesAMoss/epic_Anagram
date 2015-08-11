@@ -40,6 +40,24 @@
         }//end test
 
 
+// are there at least 2 elements in the return array: ["foo", ... ]
+
+        function test_AnagramChecker_containsTwoIndexes()
+        {
+
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input1 = "foo";
+            $input2 = "bar is a paragraph of text oof";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input1, $input2);
+
+            //Assert
+            $this->assertTrue(count($result) === 2);
+        }//end test
+
+
 //
 
     }

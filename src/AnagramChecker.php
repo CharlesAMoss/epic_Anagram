@@ -8,7 +8,7 @@ class AnagramChecker
             $anagram_array = array();
             $match_array = array();
 
-            //array_push($anagram_array, $inputStringOne);
+            array_push($anagram_array, $inputStringOne);
             array_push($anagram_array, $match_array);
 
 
